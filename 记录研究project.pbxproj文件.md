@@ -202,3 +202,38 @@
 		name = Frameworks;
 		sourceTree = "<group>";
 		};
+		
+#### 修改pch文件,将unity中的Prefix.pch中的代码全部复制到自己的E_Publishing_Prefix.pch中
+
+#### 修改Other Linker Flags 将unity中设置复制到原生项目中
+
+* 在XCBuildConfiguration中修改键值, 在debug和release中都要更改
+
+> 
+ 				
+    OTHER_LDFLAGS = (
+		"-liconv",
+		"-lz",
+		"-lGraph2d",
+		"-lGraph3d",
+		"-ljson",
+		"-lc++",
+		"-weak_framework",
+		CoreMotion,
+		"-weak-lSystem",
+		"$(OTHER_LDFLAGS)",
+				);
+
+
+#### write link map file
+#### head search path
+#### libra search path
+#### Other C Flags 
+#### C++ language dialect
+#### C++ standard Library
+#### enable C++ runtime Types
+#### enable Object-c extensions
+#### overriding deprecated Objecet-c methods
+#### GCC_USE_INDIRECT_FUNCTION_CALLS
+#### UNITY_RUNTIME_VERSION
+#### UNITY_SCRIPTING_BACKEND
