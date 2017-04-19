@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://www.monobjc.net/xcode-project-file-format.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Monobjc</title>
+
+		<meta name="description" content="">
+		<meta name="author" content="letiemble">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+		<link rel="stylesheet" type="text/css" media="screen" href="./project文件记录_files/all-1413131718000.css"> 
+		<script type="text/javascript" async="" src="http://www.google.com/cse/cse.js?cx=005525806907238293396:hhqwfaa18g0"></script><script type="text/javascript" async="" src="./project文件记录_files/ga.js"></script><script src="./project文件记录_files/all-1413320829000.js"></script> 
+		<script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-88776-3']);  _gaq.push(['_trackPageview']);   (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+	</head>
+	<body style="zoom: 1;">
+<header class="header-fixed">
+    <nav class="header-menu pure-menu pure-menu-open pure-menu-horizontal">
+        <ul>
+			<li class="dummy ">
+		        <a class="" href="http://www.monobjc.net/index.html"><b>Monobjc</b></a>
+			</li>
+        </ul>
+        <ul style="float: right;">
+			<li class="dummy ">
+				<a href="http://www.monobjc.net/downloads.html">Downloads</a>
+			</li>
+			<li class="dummy ">
+				<a href="http://www.monobjc.net/documentation.html">Documentation</a>
+			</li>
+			<li class="dummy ">
+				<a href="http://www.monobjc.net/samples.html">Samples</a>
+			</li>
+			<li class="dummy ">
+				<a href="http://www.monobjc.net/support.html">Support</a>
+			</li>
+			<li class="dummy ">
+				<a href="http://www.monobjc.net/resources.html">Resources</a>
+			</li>
+        </ul>
+    </nav>
+	<div class="separator"></div>
+</header>
+
+<header class="banner filled">
+	<nav class="proxy pure-menu pure-menu-open pure-menu-horizontal">
+		<a class="pure-menu-heading" href="http://www.monobjc.net/xcode-project-file-format.html">&nbsp;</a>
+	</nav>
+	<section>
+		<div class="search-engine">
+			<gcse:search></gcse:search>
+		</div>
+		<h1>Xcode Project File Format</h1>
+		<h2></h2>
+	</section>
+</header>
+
+
+
+
+
+<section class="content">
+	<div class="pure-g">
+		<div class="pure-u-1-4">
+			<div class="l-box">
+				<nav class="sidebar pure-menu pure-menu-open">
+					<ul class="">
+						<li>
+							<a href="http://www.monobjc.net/getting-started.html">Getting Started</a>
+							<nav class="sidebar pure-menu pure-menu-open">
+								<ul class="">
+								</ul>
+							</nav>
+						</li>
+						<li>
+							<a href="http://www.monobjc.net/tutorials.html">Tutorials</a>
+							<nav class="sidebar pure-menu pure-menu-open">
+								<ul class="">
+								</ul>
+							</nav>
+						</li>
+						<li>
+							<a href="http://www.monobjc.net/programming-guide.html">Programming Guide</a>
+							<nav class="sidebar pure-menu pure-menu-open">
+								<ul class="">
+								</ul>
+							</nav>
+						</li>
+						<li>
+							<a href="http://www.monobjc.net/monodevelop-addins.html">MonoDevelop Addins</a>
+							<nav class="sidebar pure-menu pure-menu-open">
+								<ul class="">
+								</ul>
+							</nav>
+						</li>
+						<li>
+							<a href="http://www.monobjc.net/msbuild-tasks.html">MSBuild Tasks</a>
+							<nav class="sidebar pure-menu pure-menu-open">
+								<ul class="">
+								</ul>
+							</nav>
+						</li>
+						<li>
+							<a href="http://www.monobjc.net/nant-tasks.html">NAnt Tasks</a>
+							<nav class="sidebar pure-menu pure-menu-open">
+								<ul class="">
+								</ul>
+							</nav>
+						</li>
+						<li>
+							<a href="http://www.monobjc.net/f-a-q.html">F.A.Q.</a>
+							<nav class="sidebar pure-menu pure-menu-open">
+								<ul class="">
+								</ul>
+							</nav>
+						</li>
+						<li>
+							<a href="http://www.monobjc.net/building-monobjc.html">Building Monobjc</a>
+							<nav class="sidebar pure-menu pure-menu-open">
+								<ul class="">
+								</ul>
+							</nav>
+						</li>
+						<li>
+							<a href="http://www.monobjc.net/how-monobjc-works.html">How Monobjc Works</a>
+							<nav class="sidebar pure-menu pure-menu-open">
+								<ul class="">
+								</ul>
+							</nav>
+						</li>
+						<li>
+							<a href="http://www.monobjc.net/technical-notes.html">Technical Notes</a>
+							<nav class="sidebar pure-menu pure-menu-open">
+								<ul class="">
+									<li>
+										<a href="http://www.monobjc.net/xib-file-format.html">XIB File Format</a>
+									</li>
+									<li>
+										<a href="http://www.monobjc.net/xcode-project-file-format.html">Xcode Project File Format</a>
+									</li>
+								</ul>
+							</nav>
+						</li>
+					</ul>
+				</nav>
+				<br>			</div>
+		</div>
+		<div class="pure-u-3-4">
+			<div class="r-box">
+	<h3 id="introduction">Introduction</h3>
+<p>The Xcode project file is an old-style plist (Next style) based on braces to delimit the hierarchy. The file begins with an explicit encoding information, usually the UTF-8 one. This means that the file must not bear a BOM (Byte Ordering Mark) at its start or the parsing will fail.</p>
+<p>Note: The following document is based on observations of various *.pbxproj files and element properties have been inferred. There was not code reverse engineering involved what so ever.</p>
+<h3 id="unique-identification">Unique Identification</h3>
+<p>Each element in the file is uniquely identified by a 96 bits identifier using a 24 hexadecimal representation. This unique identifier is unique accross the document.</p>
+<p>The algorithm used by Xcode to generate the unique identifier seems to be based both on date, sequence and pre-defined values, but as there is no evidence that these identifiers must follow a generation convention, one can think that arbitrary identifier can be used, as long as they are unique accross the document.</p>
+<p>The following references were useful while writing this note:</p>
+<p>A brief look at the Xcode project format
+[Cmake] Re: CMake Apple XCode support?
+PBTOMAKE -- Xcode to Unix</p>
+<h3 id="elements">Elements</h3>
+<p>Here is the list of elements contained in the file format:</p>
+<ul>
+<li>Root Element</li>
+<li>PBXBuildFile</li>
+<li>PBXBuildPhase<ul>
+<li>PBXAppleScriptBuildPhase</li>
+<li>PBXCopyFilesBuildPhase</li>
+<li>PBXFrameworksBuildPhase</li>
+<li>PBXHeadersBuildPhase</li>
+<li>PBXResourcesBuildPhase</li>
+<li>PBXShellScriptBuildPhase</li>
+<li>PBXSourcesBuildPhase</li>
+</ul>
+</li>
+<li>PBXContainerItemProxy</li>
+<li>PBXFileElement<ul>
+<li>PBXFileReference</li>
+<li>PBXGroup</li>
+<li>PBXVariantGroup</li>
+</ul>
+</li>
+<li>PBXTarget<ul>
+<li>PBXAggregateTarget</li>
+<li>PBXLegacyTarget</li>
+<li>PBXNativeTarget</li>
+</ul>
+</li>
+<li>PBXProject</li>
+<li>PBXTargetDependency</li>
+<li>XCBuildConfiguration</li>
+<li>XCConfigurationList</li>
+</ul>
+<h3 id="root-element">Root Element</h3>
+<p>The root section contains the general informations.</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>archiveVersion</td>
+<td>Number</td>
+<td>1</td>
+<td>Default value.</td>
+</tr>
+<tr>
+<td>classes</td>
+<td>List</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>objectVersion</td>
+<td>Number</td>
+<td></td>
+<td>See XcodeCompatibilityVersion enumeration.</td>
+</tr>
+<tr>
+<td>objects</td>
+<td>Map</td>
+<td>A map of element</td>
+<td>The map is indexed by the elements identifier.</td>
+</tr>
+<tr>
+<td>rootObject</td>
+<td>Reference</td>
+<td>An element reference</td>
+<td>The object is a reference to a PBXProject element.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs swift"><span class="hljs-comment">// !$*UTF8*$!</span>
+{
+    archiveVersion = <span class="hljs-number">1</span>;
+    <span class="hljs-class"><span class="hljs-keyword">class</span><span class="hljs-title">es</span> = </span>{
+    };
+    objectVersion = <span class="hljs-number">45</span>;
+    objects = {
+
+    ...
+
+    };
+    rootObject = 0867D690FE84028FC02AAC07 <span class="hljs-comment">/* Project object */</span>;
+}
+</code></pre><h3 id="pbxaggregatetarget">PBXAggregateTarget</h3>
+<p>This is the element for a build target that aggregates several others.</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>PBXAggregateTarget</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>buildConfigurationList</td>
+<td>Reference</td>
+<td>An element reference</td>
+<td>The object is a reference to a XCConfigurationList element.</td>
+</tr>
+<tr>
+<td>buildPhases</td>
+<td>List</td>
+<td>A list of element reference</td>
+<td>The objects are a reference to a PBXBuildPhase element.</td>
+</tr>
+<tr>
+<td>dependencies</td>
+<td>List</td>
+<td>A list of element reference</td>
+<td>The objects are a reference to a PBXTargetDependency element.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>The name of the target.</td>
+<td></td>
+</tr>
+<tr>
+<td>productName</td>
+<td>String</td>
+<td>The product name.</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs cs"><span class="hljs-number">4</span>DA521A6115A00AF007C19C3 <span class="hljs-comment">/* documentation */</span> = {
+    isa = PBXAggregateTarget;
+    buildConfigurationList = <span class="hljs-number">4</span>DA521AE115A00ED007C19C3 <span class="hljs-comment">/* Build configuration list for PBXAggregateTarget "documentation" */</span>;
+    buildPhases = (
+        <span class="hljs-number">4</span>DA521A5115A00AF007C19C3 <span class="hljs-comment">/* ShellScript */</span>,
+    );
+    dependencies = (
+        <span class="hljs-number">4</span>DA521AA115A00BC007C19C3 <span class="hljs-comment">/* PBXTargetDependency */</span>,
+    );
+    name = documentation;
+    productName = documentation;
+};
+</code></pre><h3 id="pbxbuildfile">PBXBuildFile</h3>
+<p>This element indicate a file reference that is used in a PBXBuildPhase (either as an include or resource).</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>PBXBuildFile</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>fileRef</td>
+<td>Reference</td>
+<td>An element reference</td>
+<td>The object is a reference to a PBXFileReference element.</td>
+</tr>
+<tr>
+<td>settings</td>
+<td>Map</td>
+<td></td>
+<td>A map of key/value pairs for additionnal settings.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs cs"><span class="hljs-number">4</span>D05CA6B1193055000125045 <span class="hljs-comment">/* xxx.c in Sources */</span> = {
+    isa = PBXBuildFile;
+    fileRef = <span class="hljs-number">4</span>D05CA411193055000125045 <span class="hljs-comment">/* xxx.c */</span>;
+};
+</code></pre><h3 id="pbxbuildphase">PBXBuildPhase</h3>
+<p>This element is an abstract parent for specialized build phases.</p>
+<h3 id="pbxcontaineritemproxy">PBXContainerItemProxy</h3>
+<p>This is the element for to decorate a target item.</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>PBXContainerItemProxy</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>containerPortal</td>
+<td>Reference</td>
+<td>An element reference</td>
+<td>The object is a reference to a PBXProject element.</td>
+</tr>
+<tr>
+<td>proxyType</td>
+<td>Number</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>remoteGlobalIDString</td>
+<td>Reference</td>
+<td>An element reference</td>
+<td>A unique reference ID.</td>
+</tr>
+<tr>
+<td>remoteInfo</td>
+<td>String</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs cpp"><span class="hljs-number">4</span>D22DC0C1167C992007AF714 <span class="hljs-comment">/* PBXContainerItemProxy */</span> = {
+    isa = PBXContainerItemProxy;
+    containerPortal = <span class="hljs-number">08F</span>B7793FE84155DC02AAC07 <span class="hljs-comment">/* Project object */</span>;
+    proxyType = <span class="hljs-number">1</span>;
+    remoteGlobalIDString = <span class="hljs-number">87293</span>EBF1153C114007AFD45;
+    remoteInfo = xxx;
+};
+</code></pre><h3 id="pbxcopyfilesbuildphase">PBXCopyFilesBuildPhase</h3>
+<p>This is the element for the copy file build phase.</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>PBXCopyFilesBuildPhase</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>buildActionMask</td>
+<td>Number</td>
+<td>2^32-1</td>
+<td></td>
+</tr>
+<tr>
+<td>dstPath</td>
+<td>String</td>
+<td>The destination path</td>
+<td></td>
+</tr>
+<tr>
+<td>dstSubfolderSpec</td>
+<td>Number</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>files</td>
+<td>List</td>
+<td>A list of element reference</td>
+<td>The objects are a reference to a PBXBuildFile element.</td>
+</tr>
+<tr>
+<td>runOnlyForDeploymentPostprocessing</td>
+<td>Number</td>
+<td>0</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<p>MISSING</p>
+<h3 id="pbxfileelement">PBXFileElement</h3>
+<p>This element is an abstract parent for file and group elements.</p>
+<h3 id="pbxfilereference">PBXFileReference</h3>
+<p>A PBXFileReference is used to track every external file referenced by the project: source files, resource files, libraries, generated application files, and so on.</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>PBXFileReference</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>fileEncoding</td>
+<td>Number</td>
+<td></td>
+<td>See the PBXFileEncoding enumeration.</td>
+</tr>
+<tr>
+<td>explicitFileType</td>
+<td>String</td>
+<td></td>
+<td>See the PBXFileType enumeration.</td>
+</tr>
+<tr>
+<td>lastKnownFileType</td>
+<td>String</td>
+<td></td>
+<td>See the PBXFileType enumeration.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>The filename.</td>
+<td></td>
+</tr>
+<tr>
+<td>path</td>
+<td>String</td>
+<td>The path to the filename.</td>
+<td></td>
+</tr>
+<tr>
+<td>sourceTree</td>
+<td>String</td>
+<td>See the PBXSourceTree enumeration.</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs cpp"><span class="hljs-number">87293F</span>901153D870007AFD45 <span class="hljs-comment">/* monobjc.mm */</span> = {
+    isa = PBXFileReference; 
+    fileEncoding = <span class="hljs-number">4</span>; 
+    lastKnownFileType = sourcecode.cpp.objcpp; 
+    name = monobjc.mm; 
+    path = sources/monobjc.mm; 
+    sourceTree = <span class="hljs-string">""</span>;
+};
+</code></pre><h3 id="pbxframeworksbuildphase">PBXFrameworksBuildPhase</h3>
+<p>This is the element for the framewrok link build phase.</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>PBXFrameworksBuildPhase</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>buildActionMask</td>
+<td>Number</td>
+<td>2^32-1</td>
+<td></td>
+</tr>
+<tr>
+<td>files</td>
+<td>List</td>
+<td>A list of element reference</td>
+<td>The objects are a reference to a PBXBuildFile element.</td>
+</tr>
+<tr>
+<td>runOnlyForDeploymentPostprocessing</td>
+<td>Number</td>
+<td>0</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs cs"><span class="hljs-number">4</span>D05CA2C119304BD00125045 <span class="hljs-comment">/* Frameworks */</span> = {
+    isa = PBXFrameworksBuildPhase;
+    buildActionMask = <span class="hljs-number">2147483647</span>;
+    files = (
+    );
+    runOnlyForDeploymentPostprocessing = <span class="hljs-number">0</span>;
+};
+</code></pre><h3 id="pbxgroup">PBXGroup</h3>
+<p>This is the element to group files or groups.</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>PBXGroup</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>children</td>
+<td>List</td>
+<td>A list of element reference</td>
+<td>The objects are a reference to a PBXFileElement element.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>The filename.</td>
+<td></td>
+</tr>
+<tr>
+<td>sourceTree</td>
+<td>String</td>
+<td>See the PBXSourceTree enumeration.</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs cs"><span class="hljs-number">4</span>DA521A2115A003E007C19C3 <span class="hljs-comment">/* scripts */</span> = {
+    isa = PBXGroup;
+    children = (
+    <span class="hljs-number">4</span>D22DBAF116742DE007AF714 <span class="hljs-comment">/* fix_references.sh */</span>,
+    <span class="hljs-number">4</span>DA521A1115A0032007C19C3 <span class="hljs-comment">/* generate_descriptors.sh */</span>,
+    );
+    name = scripts;
+    sourceTree = <span class="hljs-string">""</span>;
+};
+</code></pre><h3 id="pbxheadersbuildphase">PBXHeadersBuildPhase</h3>
+<p>This is the element for the framewrok link build phase.</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>PBXHeadersBuildPhase</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>buildActionMask</td>
+<td>Number</td>
+<td>2^32-1</td>
+<td></td>
+</tr>
+<tr>
+<td>files</td>
+<td>List</td>
+<td>A list of element reference</td>
+<td>The objects are a reference to a PBXBuildFile element.</td>
+</tr>
+<tr>
+<td>runOnlyForDeploymentPostprocessing</td>
+<td>Number</td>
+<td>0</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs cs"><span class="hljs-number">87293</span>EBC1153C114007AFD45 <span class="hljs-comment">/* Headers */</span> = {
+    isa = PBXHeadersBuildPhase;
+    buildActionMask = <span class="hljs-number">2147483647</span>;
+    files = (
+    );
+    runOnlyForDeploymentPostprocessing = <span class="hljs-number">0</span>;
+};
+</code></pre><h3 id="pbxlegacytarget">PBXLegacyTarget</h3>
+<p>MISSING</p>
+<h3 id="pbxnativetarget">PBXNativeTarget</h3>
+<p>This is the element for a build target that produces a binary content (application or library).</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>PBXNativeTarget</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>buildConfigurationList</td>
+<td>Reference</td>
+<td>An element reference</td>
+<td>The object is a reference to a XCConfigurationList element.</td>
+</tr>
+<tr>
+<td>buildPhases</td>
+<td>List</td>
+<td>A list of element reference</td>
+<td>The objects are a reference to a PBXBuildPhase element.</td>
+</tr>
+<tr>
+<td>dependencies</td>
+<td>List</td>
+<td>A list of element reference</td>
+<td>The objects are a reference to a PBXTargetDependency element.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>The name of the target.</td>
+<td></td>
+</tr>
+<tr>
+<td>productInstallPath</td>
+<td>String</td>
+<td>The product install path.</td>
+<td></td>
+</tr>
+<tr>
+<td>productName</td>
+<td>String</td>
+<td>The product name.</td>
+<td></td>
+</tr>
+<tr>
+<td>productReference</td>
+<td>Reference</td>
+<td>An element reference</td>
+<td>The object is a reference to a PBXFileReference element.</td>
+</tr>
+<tr>
+<td>productType</td>
+<td>String</td>
+<td></td>
+<td>See the PBXProductType enumeration.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs cs"><span class="hljs-number">8</span>D1107260486CEB800E47090 <span class="hljs-comment">/* XXX */</span> = {
+    isa = PBXNativeTarget;
+    buildConfigurationList = C01FCF4A08A954540054247B <span class="hljs-comment">/* Build configuration list for PBXNativeTarget "XXX" */</span>;
+    buildPhases = (
+        <span class="hljs-number">8</span>D1107290486CEB800E47090 <span class="hljs-comment">/* Resources */</span>,
+        <span class="hljs-number">8</span>D11072C0486CEB800E47090 <span class="hljs-comment">/* Sources */</span>,
+        <span class="hljs-number">8</span>D11072E0486CEB800E47090 <span class="hljs-comment">/* Frameworks */</span>,
+    );
+    buildRules = (
+    );
+    dependencies = (
+    );
+    name = XXX;
+    productInstallPath = <span class="hljs-string">"$(HOME)/Applications"</span>;
+    productName = TrackIt;
+    productReference = <span class="hljs-number">8</span>D1107320486CEB800E47090 <span class="hljs-comment">/* XXX.app */</span>;
+    productType = <span class="hljs-string">"com.apple.product-type.application"</span>;
+};
+</code></pre><h3 id="pbxproject">PBXProject</h3>
+<p>This is the element for a build target that produces a binary content (application or library).</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>PBXProject</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>buildConfigurationList</td>
+<td>Reference</td>
+<td>An element reference</td>
+<td>The object is a reference to a XCConfigurationList element.</td>
+</tr>
+<tr>
+<td>compatibilityVersion</td>
+<td>String</td>
+<td>A string representation of the XcodeCompatibilityVersion.</td>
+<td></td>
+</tr>
+<tr>
+<td>developmentRegion</td>
+<td>String</td>
+<td></td>
+<td>The region of development.</td>
+</tr>
+<tr>
+<td>hasScannedForEncodings</td>
+<td>Number</td>
+<td>0 or 1</td>
+<td>Whether file encodings have been scanned.</td>
+</tr>
+<tr>
+<td>knownRegions</td>
+<td>List</td>
+<td>A list of string</td>
+<td>The known regions for localized files.</td>
+</tr>
+<tr>
+<td>mainGroup</td>
+<td>Reference</td>
+<td>An element reference</td>
+<td>The object is a reference to a PBXGroup element.</td>
+</tr>
+<tr>
+<td>productRefGroup</td>
+<td>Reference</td>
+<td>An element reference</td>
+<td>The object is a reference to a PBXGroup element.</td>
+</tr>
+<tr>
+<td>projectDirPath</td>
+<td>String</td>
+<td>The relative path of the project.</td>
+<td></td>
+</tr>
+<tr>
+<td>projectReferences</td>
+<td>Array of map</td>
+<td>Each map in the array contains two keys: ProductGroup and ProjectRef.</td>
+<td></td>
+</tr>
+<tr>
+<td>projectRoot</td>
+<td>String</td>
+<td>The relative root path of the project.</td>
+<td></td>
+</tr>
+<tr>
+<td>targets</td>
+<td>List</td>
+<td>A list of element reference</td>
+<td>The objects are a reference to a PBXTarget element.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs cs"><span class="hljs-number">29</span>B97313FDCFA39411CA2CEA <span class="hljs-comment">/* Project object */</span> = {
+        isa = PBXProject;
+        buildConfigurationList = C01FCF4E08A954540054247B <span class="hljs-comment">/* Build configuration list for PBXProject "XXX" */</span>;
+        compatibilityVersion = <span class="hljs-string">"Xcode 2.4"</span>;
+        developmentRegion = English;
+        hasScannedForEncodings = <span class="hljs-number">1</span>;
+        knownRegions = (
+                English,
+                Japanese,
+                French,
+                German,
+                en,
+        );
+        mainGroup = <span class="hljs-number">29</span>B97314FDCFA39411CA2CEA <span class="hljs-comment">/* XXX*/</span>;
+        projectDirPath = <span class="hljs-string">""</span>;
+        projectRoot = <span class="hljs-string">""</span>;
+        targets = (
+             <span class="hljs-number">8</span>D1107260486CEB800E47090 <span class="hljs-comment">/* XXX*/</span>,
+        );
+};
+</code></pre><h3 id="pbxresourcesbuildphase">PBXResourcesBuildPhase</h3>
+<p>This is the element for the resources copy build phase.</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>PBXResourcesBuildPhase</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>buildActionMask</td>
+<td>Number</td>
+<td>2^32-1</td>
+<td></td>
+</tr>
+<tr>
+<td>files</td>
+<td>List</td>
+<td>A list of element reference</td>
+<td>The objects are a reference to a PBXBuildFile element.</td>
+</tr>
+<tr>
+<td>runOnlyForDeploymentPostprocessing</td>
+<td>Number</td>
+<td>0</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs cs"><span class="hljs-number">8</span>D1107290486CEB800E47090 <span class="hljs-comment">/* Resources */</span> = {
+        isa = PBXResourcesBuildPhase;
+        buildActionMask = <span class="hljs-number">2147483647</span>;
+        files = (
+                <span class="hljs-number">535</span>C1E1B10AB6B6300F50231 <span class="hljs-comment">/* ReadMe.txt in Resources */</span>,
+                <span class="hljs-number">533</span>B968312721D05005E617D <span class="hljs-comment">/* Credits.rtf in Resources */</span>,
+                <span class="hljs-number">533</span>B968412721D05005E617D <span class="hljs-comment">/* InfoPlist.strings in Resources */</span>,
+                <span class="hljs-number">533</span>B968512721D05005E617D <span class="hljs-comment">/* MainMenu.nib in Resources */</span>,
+                <span class="hljs-number">533</span>B968612721D05005E617D <span class="hljs-comment">/* TableEdit.nib in Resources */</span>,
+                <span class="hljs-number">533</span>B968712721D05005E617D <span class="hljs-comment">/* TestWindow.nib in Resources */</span>,
+        );
+        runOnlyForDeploymentPostprocessing = <span class="hljs-number">0</span>;
+};
+</code></pre><h3 id="pbxshellscriptbuildphase">PBXShellScriptBuildPhase</h3>
+<p>This is the element for the resources copy build phase.</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>PBXShellScriptBuildPhase</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>buildActionMask</td>
+<td>Number</td>
+<td>2^32-1</td>
+<td></td>
+</tr>
+<tr>
+<td>files</td>
+<td>List</td>
+<td>A list of element reference</td>
+<td>The objects are a reference to a PBXBuildFile element.</td>
+</tr>
+<tr>
+<td>inputPaths</td>
+<td>List</td>
+<td>A list of string</td>
+<td>The input paths.</td>
+</tr>
+<tr>
+<td>outputPaths</td>
+<td>List</td>
+<td>A list of string</td>
+<td>The output paths.</td>
+</tr>
+<tr>
+<td>runOnlyForDeploymentPostprocessing</td>
+<td>Number</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>shellPath</td>
+<td>String</td>
+<td>The path to the shell interpreter.</td>
+<td></td>
+</tr>
+<tr>
+<td>shellScript</td>
+<td>String</td>
+<td>The content of the script shell.</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs javascript"><span class="hljs-number">4</span>D22DBAE11674009007AF714 <span class="hljs-comment">/* ShellScript */</span> = {
+        isa = PBXShellScriptBuildPhase;
+        buildActionMask = <span class="hljs-number">2147483647</span>;
+        files = (
+        );
+        inputPaths = (
+        );
+        outputPaths = (
+        );
+        runOnlyForDeploymentPostprocessing = <span class="hljs-number">0</span>;
+        shellPath = <span class="hljs-regexp">/bin/</span>sh;
+        shellScript = <span class="hljs-string">"./fix_references.sh"</span>;
+};
+</code></pre><h3 id="pbxsourcesbuildphase">PBXSourcesBuildPhase</h3>
+<p>This is the element for the sources compilation build phase.</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>PBXSourcesBuildPhase</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>buildActionMask</td>
+<td>Number</td>
+<td>2^32-1</td>
+<td></td>
+</tr>
+<tr>
+<td>files</td>
+<td>List</td>
+<td>A list of element reference</td>
+<td>The objects are a reference to a PBXBuildFile element.</td>
+</tr>
+<tr>
+<td>runOnlyForDeploymentPostprocessing</td>
+<td>Number</td>
+<td>0</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs cs"><span class="hljs-number">4</span>DF8B22D1171CFBF0081C1DD <span class="hljs-comment">/* Sources */</span> = {
+        isa = PBXSourcesBuildPhase;
+        buildActionMask = <span class="hljs-number">2147483647</span>;
+        files = (
+                <span class="hljs-number">4</span>DF8B23E1171D0310081C1DD <span class="hljs-comment">/* test.mm in Sources */</span>,
+        );
+        runOnlyForDeploymentPostprocessing = <span class="hljs-number">0</span>;
+};
+</code></pre><h3 id="pbxtarget">PBXTarget</h3>
+<p>This element is an abstract parent for specialized targets.</p>
+<h3 id="pbxtargetdependency">PBXTargetDependency</h3>
+<p>This is the element for referencing other target through content proxies.</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>PBXTargetDependency</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>target</td>
+<td>Reference</td>
+<td>An element reference</td>
+<td>The object is a reference to a PBXNativeTarget element.</td>
+</tr>
+<tr>
+<td>targetProxy</td>
+<td>Reference</td>
+<td>An element reference</td>
+<td>The object is a reference to a PBXContainerItemProxy element.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs cs"><span class="hljs-number">4</span>D22DC0D1167C992007AF714 <span class="hljs-comment">/* PBXTargetDependency */</span> = {
+        isa = PBXTargetDependency;
+        target = <span class="hljs-number">87293</span>EBF1153C114007AFD45 <span class="hljs-comment">/* libXXX */</span>;
+        targetProxy = <span class="hljs-number">4</span>D22DC0C1167C992007AF714 <span class="hljs-comment">/* PBXContainerItemProxy */</span>;
+};
+</code></pre><h3 id="pbxvariantgroup">PBXVariantGroup</h3>
+<p>This is the element for referencing localized resources.</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>PBXVariantGroup</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>children</td>
+<td>List</td>
+<td>A list of element reference</td>
+<td>The objects are a reference to a PBXFileElement element.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>The filename.</td>
+<td></td>
+</tr>
+<tr>
+<td>sourceTree</td>
+<td>String</td>
+<td>See the PBXSourceTree enumeration.</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs cs"><span class="hljs-number">870</span>C88031338A77600A69309 <span class="hljs-comment">/* MainMenu.xib */</span> = {
+        isa = PBXVariantGroup;
+        children = (
+                <span class="hljs-number">870</span>C88041338A77600A69309 <span class="hljs-comment">/* en */</span>,
+        );
+        name = MainMenu.xib;
+        sourceTree = <span class="hljs-string">""</span>;
+};
+</code></pre><h3 id="xcbuildconfiguration">XCBuildConfiguration</h3>
+<p>This is the element for defining build configuration.</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>XCBuildConfiguration</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>baseConfigurationReference</td>
+<td>String</td>
+<td>The path to a xcconfig file</td>
+<td></td>
+</tr>
+<tr>
+<td>buildSettings</td>
+<td>Map</td>
+<td>A map of build settings.</td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>The configuration name.</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs bash"><span class="hljs-number">870</span>C88151338ABB600A69309 /* Debug */ = {
+        isa = XCBuildConfiguration;
+        buildSettings = {
+                PRODUCT_NAME = <span class="hljs-string">"<span class="hljs-variable">$(TARGET_NAME)</span>"</span>;
+        };
+        name = Debug;
+};
+<span class="hljs-number">870</span>C88161338ABB600A69309 /* Release */ = {
+        isa = XCBuildConfiguration;
+        buildSettings = {
+                PRODUCT_NAME = <span class="hljs-string">"<span class="hljs-variable">$(TARGET_NAME)</span>"</span>;
+        };
+        name = Release;
+};
+</code></pre><h3 id="xcconfigurationlist">XCConfigurationList</h3>
+<p>This is the element for listing build configurations.</p>
+<table class="pure-table pure-table-bordered">
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reference</td>
+<td>UUID</td>
+<td>A 96 bits identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>isa</td>
+<td>XCConfigurationList</td>
+<td>Empty</td>
+<td></td>
+</tr>
+<tr>
+<td>buildConfigurations</td>
+<td>List</td>
+<td>A list of element reference</td>
+<td>The objects are a reference to a XCBuildConfiguration element.</td>
+</tr>
+<tr>
+<td>defaultConfigurationIsVisible</td>
+<td>Number</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>defaultConfigurationName</td>
+<td>String</td>
+<td>The default configuration name.</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class=" hljs sql">870C87E41338A77600A69309 <span class="hljs-comment">/* Build configuration list for PBXProject "CocoaApp" */</span> = {
+        isa = XCConfigurationList;
+        buildConfigurations = (
+                870C88061338A77600A69309 <span class="hljs-comment">/* Debug */</span>,
+                870C88071338A77600A69309 <span class="hljs-comment">/* Release */</span>,
+        );
+        defaultConfigurationIsVisible = 0;
+        defaultConfigurationName = <span class="hljs-operator"><span class="hljs-keyword">Release</span>;</span>
+};
+</code></pre>
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<footer class="clearfix">
+	<section>
+		Copyright © 2008-2014 Laurent Etiemble. All rights reserved. Logo licenced from iStockPhoto.<br>All trademarks and copyrights on this website are owned by their respective owners.
+	</section>
+</footer>
+<script>
+  (function() {
+    var cx = '005525806907238293396:hhqwfaa18g0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<script>
+$(document).ready(function() {
+	$(".fancybox").fancybox();
+	$('pre code').each(function(i, block) {
+    	hljs.highlightBlock(block);
+  	});
+});
+
+$("table").addClass("pure-table pure-table-bordered");
+</script>
+        
+    
+
+</body></html>
