@@ -107,6 +107,10 @@ UnityAppController *appController =  (UnityAppController *)[UIApplication shared
 
 ```
 
+> 增加一个进度
+
+* 已看/总共的页数 %
+
 > 循环往复 打开下一本书 给unity传该书的路径
 
 ## 功能选项
@@ -135,6 +139,8 @@ void UnityReportError(string error) {
 ```
 
 ## 后续
+
+* 将ar模块中的UnityAppController的逻辑和主工程的主要delegate逻辑的逻辑要分离
 
 * 退到后台通知到unity(暂定按照unity的原有功能使用)
  
