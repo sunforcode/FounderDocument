@@ -9,10 +9,10 @@
 
 * shell脚本写控制流程
 
-		if condition1
+		if ["a" == "a"]
 		then
 		    command1
-		elif condition2 
+		elif ["a" == "a"] 
 		then 
 		    command2
 		else
