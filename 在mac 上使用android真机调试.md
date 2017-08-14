@@ -26,3 +26,10 @@
 
 		adb devices
 		
+		
+### unity 的设置 
+* java sdk 按照android studio中的设置设置
+* java 环境的配置是在
+
+> mac 下java的默认存放位置
+> /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk
