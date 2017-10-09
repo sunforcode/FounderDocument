@@ -18,3 +18,8 @@ The process has been returned to the state before expression evaluation.
 
 
 
+## Masonry 报错unrecognized
+
+```
+在buildSetting 中添加-l"Masonry"
+```
