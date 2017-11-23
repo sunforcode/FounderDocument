@@ -23,3 +23,13 @@ The process has been returned to the state before expression evaluation.
 ```
 在buildSetting 中添加-l"Masonry"
 ```
+
+
+## 在加载从stroyBoard中的controller的控件，使用set方法，会发现在set方法中 UI控件为空
+
+* 解决办法： 在set方法放到主线程最后中去 dispathqueue.main.async
+
+```
+```
+
+#### 强制转屏 在用户锁定了屏幕锁定时，可以调用强制转屏

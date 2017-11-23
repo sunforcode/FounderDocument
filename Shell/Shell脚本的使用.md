@@ -33,3 +33,15 @@ export PATH=$PATH:/home/jemy/tools
 ```
 
 保存完毕之后,可以通过两种方式立即生效,其一为输入 **source ~/.zshrc**或者**source ~/.bashrc**来使配置立即生效, 或者完全关闭命令行,重新打开一个,接下来就可以在任何位置使用**qshell**命令了
+
+
+获取权限
+
+chmod 777 [filename]
+
+#### shell脚本的头
+
+```
+#!/bin/bash
+
+```
