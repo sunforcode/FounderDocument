@@ -1,0 +1,49 @@
+-------------------------------------------------------
+-- 新版刷新云端接口：
+http://172.19.57.221:8081/userCenter/SingleVersion?itname=getpersoncert&userid=1783933&loginName=zqtest001&udid=dd&mallId=dd&itver=2.0&isTopLevel=1
+请求方式：get请求即可
+参数：
+	itname		接口名称：getpersoncert 固定参数
+	userid		用户id
+	loginName	用户名
+	udid		设备id
+	mallId		不知道
+	itver		接口版本号：2.0 固定参数
+	isTopLevel	是否首层：1：首层。其他：第二层或者第三层
+	uuid		当isTopLevel不为1时 传入资源的uuid（多文件或者是资源包）
+	goodsType	当isTopLevel不为1时 传入资源的类型（多文件是4 资源包是3）
+
+返回结果：
+	{
+  "status": "1",			接口返回状态： 1成功 0失败
+  "msg": "success",			接口返回信息：
+  "secretKey": "Founder123",		秘密钥匙
+  "endTime": "2018-01-23 22:22:39",	结束时间
+  "udid": "dd",				设备id
+  "userId": "1783933",			用户id
+  "buyGoodsUuId": "",			
+  "data": [				个人证书内容json串	
+    {
+      "uuid": "f9a49c26-1e0f-453d-9fd0-83869487f49e",	资源的uuid
+      "goodsType": 1,					资源的类型
+      "type": 1,					类型
+      "canActiveDate": "",				
+      "beginDate": "",
+      "endDate": "",
+      "endDateExtend": "",
+      "authStatus": 0,
+      "fileVersion": "20171220191606",			资源的文件信息版本号
+      "descVersion": "20171106174010",			资源的描述信息版本号
+      "name": "管理epub",				资源的名称
+      "iconPath": "http://172.19.57.221:8081/ossFront/upload/goodsimg/3d689338-e7ba-4517-a536-0c20e97d742a.jpg",		资源封面图片的全路径
+      "filePath": "http://172.19.57.221:8081/ossFront/upload/goods/epub/2017-12/0de8add6-ad88-4c78-ae57-5a77a8f3e898.epub",	资源文件的全路径
+      "fileSize": "1411298",				资源大小 单位B
+      "fileType": "epub",				文件资源后缀
+      "authorInfo": "",
+      "fileCount": "0",					资源子资源数量（针对资源包）
+      "fileTag": "epub",				资源文件类型（基本和fileTag一样）
+      "isAllowPdfPrint": "1",				是否允许pdf打印
+      "isAllowEpubCopy": "1"				是否允许epub拷贝
+    }
+	]
+	  }

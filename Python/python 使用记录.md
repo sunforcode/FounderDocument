@@ -29,3 +29,8 @@ Pycharm 默认该项目的根目录为source目录,每次import都是从source�
 ![](http://okzs58u17.bkt.clouddn.com/python_03.png)
 
 3. 自己测试中,将另外的一个目录下的文件夹也设置为source也可以将其中的文件正确的引用到,而不报红
+
+
+#### BOM
+读取text时候,会出现第一行的文件头为
+data = data.replace(codecs.BOM_UTF8,"")

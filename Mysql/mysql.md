@@ -36,4 +36,13 @@ if(worked){
     NSLog(@"插入成功");
 }else{
    
+```  
+
+
+### bug
+
+```
+Warning:The /usr/local/mysql/data directory is not owned by the ‘mysql‘ or ‘_mysql‘ ”
+
+解决办法: sudo chown -R  _mysql:wheel  /usr/local/mysql/data
 ```

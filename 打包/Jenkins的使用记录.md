@@ -108,3 +108,16 @@
 	
 	**SVN_URL**
 	Subversion URL that's currently checked out to the workspace.
+	
+	
+### 根据构建结果调用其他的任务
+Parameterized
+
+###开机启动
+
+设置开机自启动：sudo launchctl load -w /Library/LaunchDaemons/org.jenkins-ci.plist
+取消开机自启动：sudo launchctl unload -w /Library/LaunchDaemons/org.jenkins-ci.plist
+手动启动：Java -jar jenkins.war
+后台启动(默认端口)：nohup java -jar jenkins.war &
+后台启动(指定端口)：nohup java -jar jenkins.war -httpPort=88 &
+后台启动(HTTPS)：nohup java -jar jenkins.war -httpsPort=88 &
